@@ -5,6 +5,8 @@ import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
 import Avatar from '../images/Avatar.png';
 import {CiCoffeeCup} from "react-icons/ci";
+import me from '../images/profile.png';
+
 
 const Home = () => {
   return (
@@ -17,11 +19,8 @@ const Home = () => {
           <Typed/>   
         </div>
 
-        <Lottie 
-          className="illustration" 
-          animationData={SpaceBoy} 
-          loop={true} 
-        />
+        
+        <img className='illustration' src={me} alt="description" />
         
       </div>
 
