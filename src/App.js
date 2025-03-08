@@ -23,7 +23,7 @@ function App() {
     <>
       {Loading ? (
       <div className="loader"> 
-        <BeatLoader color={'#9067C6'} loading={true} size={30} />
+        <BeatLoader color={'#ffffff'} loading={true} size={30} />
       </div>
       ):(
       <div>
