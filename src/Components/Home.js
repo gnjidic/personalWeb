@@ -1,10 +1,7 @@
 import React from 'react';
-import Lottie from  "lottie-react";
-import SpaceBoy from "../LottieFiles/SpaceBoy.json";
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
-import Avatar from '../images/Avatar.png';
-import {CiCoffeeCup} from "react-icons/ci";
+import fea from '../images/fea.png';
 import me from '../images/profile.png';
 
 
@@ -15,7 +12,7 @@ const Home = () => {
 
         <div className='HomeText'>
           <h1>Hi There!</h1>
-          <h1>I'M <b>DEVANSH SAHNI</b></h1>
+          <h1>I am <b>Damjan Gnjidic</b></h1>
           <Typed/>   
         </div>
 
@@ -26,20 +23,16 @@ const Home = () => {
 
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
+          <h1 className='AboutTextHeading'>Brief introduction</h1>
           <p>
-            I love the process of changing a raw idea into a website or a product 
-            that impacts lives. 
-            I want to do work that challenges me as a developer & work that I can 
-            be proud of.<br /><br />
-            I am fluent in <b>C++</b> and know a bit of <b>Python</b> and am working on a few 
-            projects in the <b>MERN</b> stack.<br />
-            I plan to learn <b>Next.js</b>, <b>Three.js</b> and<b> Typescript</b> in the near future. <br /><br />
-            Also, I love <b>coffee</b> <CiCoffeeCup style={{scale:"1.5", rotate:"15deg"}}/>   
+          I’m Damjan, a CAE Simulation Specialist with expertise in Computational Fluid Dynamics (CFD), Finite Element Analysis (FEA),
+          and thermal analysis. With a strong background in open-source tools like OpenFOAM, Elmer, and Code_Aster, I help engineers and
+          businesses develop high-precision simulations across aerospace, automotive, and energy industries. My passion lies in bridging
+          engineering and software development, optimizing workflows, and advancing meshing techniques for more efficient simulations.
           </p>
         </div>
         <Tilt>
-          <img className='Avatar' src={Avatar} alt="" />
+          <img className='fea' src={fea} alt="" />
         </Tilt>
       </div>
     </div>

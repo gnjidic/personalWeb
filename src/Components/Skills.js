@@ -1,30 +1,20 @@
 import React from 'react'; 
-import { CgCPlusPlus } from "react-icons/cg";
-import {FaReact, FaPython, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap} from "react-icons/fa";
-import {DiNodejs, DiJavascript1} from "react-icons/di";
-import {SiExpress, SiMongodb, SiPostman, SiVercel} from "react-icons/si";
+import {FaGithub, FaLinkedin, FaTwitter, FaInstagram} from "react-icons/fa";
+import { MdEmail } from "react-icons/md"; 
 
-const Skills = ({skill}) => {
+const Skills = ({skill, link}) => {
     const icon = {
-        'C++': <CgCPlusPlus/>,
-        Postman: <SiPostman/>,
-        React: <FaReact/>,
-        Javascript: <DiJavascript1/>,
-        Node : <DiNodejs/>,
-        Express : <SiExpress/>,
-        MongoDb : <SiMongodb/>,
-        Git : <FaGitAlt/>,
+        Instagram: <FaInstagram/>,
         Github : <FaGithub/>,
-        Npm : <FaNpm/>,
-        Figma : <FaFigma/>,
-        Bootstrap: <FaBootstrap/>,
-        Vercel : <SiVercel/>
+        Mail : <MdEmail/>,
+        LinkedIn : <FaLinkedin/>,
+        X: <FaTwitter/>
     }
     
   return (
-    <div title={skill} className='SkillBox'>
-      {icon[skill]}
-    </div>
+    <a href={link} target="_blank" rel="noopener noreferrer" title={skill} className='SkillBox'>
+            {icon[skill]}
+        </a>
   )
 }
 
